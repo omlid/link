@@ -20,7 +20,6 @@ This allows you to name pre-defined URL templates and dynamically output them
 */
 require app_path().'/links.php';
 ```
-7.	Follow the examples below!
 
 ### Usage
 #### Add a link
@@ -33,7 +32,9 @@ Link::get($key);
 ```
 #### Dynamic URLs
 ```php
+// add the link in links.php
 Link::add('post', '/article/[ID]/[SLUG]');
+
 // get the post link absolutely
 echo Link::get('post', array('id' => 15000, 'slug' => 'top-10-ways-to-help-the-world'));
 // output: myapp.com/article/15000/top-10-ways-to-help-the-world
@@ -45,14 +46,8 @@ echo Link::get('post', array('id' => 15000, 'slug' => 'top-10-ways-to-help-the-w
 
 ### Examples
 #### Simple homepage URL:
-1.	In `links.php`, add the following:
-```php
-Link::add('home', '/');
-```
-2.	In your views, you can retrieve the URL:
-```php
-Link::get('home');
-```
+1.	In `links.php`, add the following:```php Link::add('home', '/');```
+2.	In your views, you can retrieve the URL:```php Link::get('home'); ```
 
 ### Notes
 * Great for controlling your links in one centralized spot versus having to change paths in all views and controllers
