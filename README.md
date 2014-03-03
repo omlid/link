@@ -3,6 +3,7 @@
 This allows you to name pre-defined URL templates and dynamically output them
 
 ### Installation
+---
 1.	Add `"punn/laymode": "dev-master"` to `app/config/app.php` in the `require`
 2.	Add `'Punn\Link\LinkServiceProvider',` to the `providers` array in `app/config/app.php`
 3.	Add `'Link' => 'Punn\Link\Facades\Link'` to the `aliases` array in `app/config/app.php`
@@ -22,6 +23,7 @@ require app_path().'/links.php';
 ```
 
 ### Usage
+---
 #### Add a link
 ```php
 Link::add($key, $path);
@@ -45,10 +47,18 @@ echo Link::get('post', array('id' => 15000, 'slug' => 'top-10-ways-to-help-the-w
 ```
 
 ### Examples
+---
 #### Simple homepage URL:
-1.	In `links.php`, add the following:```php Link::add('home', '/');```
-2.	In your views, you can retrieve the URL:```php Link::get('home'); ```
+1.	In `links.php`, add the following:
+```php
+Link::add('home', '/');
+```
+2.	In your views, you can retrieve the URL:
+```php
+Link::get('home');
+```
 
 ### Notes
+---
 * Great for controlling your links in one centralized spot versus having to change paths in all views and controllers
 * No need to remember the paths of your links
