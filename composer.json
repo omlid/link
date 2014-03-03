@@ -1,6 +1,9 @@
 {
     "name": "punn/link",
     "description": "A link helper class that lets you dynamically generate urls",
+    "homepage": "https://github.com/punn/link",
+    "keywords": ["laravel", "link", "url generation", "urls", "dynamic links"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Erik Omlid",
