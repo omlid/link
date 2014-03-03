@@ -11,6 +11,11 @@ class LinkServiceProvider extends ServiceProvider {
 	 */
 	protected $defer = false;
 
+	public function boot()
+    {
+        $this->package('punn/link');
+    }
+
 	/**
 	 * Register the service provider.
 	 *
@@ -18,7 +23,10 @@ class LinkServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		//
+		$this->app['link'] = $this->app->share(function($app)
+        {
+            return new Link();
+        });
 	}
 
 	/**
