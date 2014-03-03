@@ -4,7 +4,7 @@ This allows you to name pre-defined URL templates and dynamically output them
 
 ### Installation
 ---
-1.	Add `"punn/laymode": "dev-master"` to `app/config/app.php` in the `require`
+1.	Add `"punn/link": "dev-master"` to `app/config/app.php` in the `require`
 2.	Add `'Punn\Link\LinkServiceProvider',` to the `providers` array in `app/config/app.php`
 3.	Add `'Link' => 'Punn\Link\Facades\Link'` to the `aliases` array in `app/config/app.php`
 4.	You may have to run `composer dump-autoload` or `php composer.phar dump-autoload` inside your laravel project's root
