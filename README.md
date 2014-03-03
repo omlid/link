@@ -49,11 +49,11 @@ echo Link::get('post', array('id' => 15000, 'slug' => 'top-10-ways-to-help-the-w
 ### Examples
 ---
 #### Simple homepage URL:
-1.	In `links.php`, add the following:
+*	In `links.php`, add the following:
 ```php
 Link::add('home', '/');
 ```
-2.	In your views, you can retrieve the URL:
+*	In your views, you can retrieve the URL:
 ```php
 Link::get('home');
 ```
