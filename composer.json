@@ -1,10 +1,10 @@
 {
     "name": "punn/link",
-    "description": "",
+    "description": "A link helper class that lets you dynamically generate urls",
     "authors": [
         {
-            "name": "",
-            "email": ""
+            "name": "Erik Omlid",
+            "email": "erik@madfeller.com"
         }
     ],
     "require": {
