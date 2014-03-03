@@ -2,7 +2,8 @@
 
 use Illuminate\Support\ServiceProvider;
 
-class LinkServiceProvider extends ServiceProvider {
+class LinkServiceProvider extends ServiceProvider
+{
 
 	/**
 	 * Indicates if loading of the provider is deferred.
@@ -25,7 +26,7 @@ class LinkServiceProvider extends ServiceProvider {
 	{
 		$this->app['link'] = $this->app->share(function($app)
         {
-            return new Link();
+            return new Link;
         });
 	}
 

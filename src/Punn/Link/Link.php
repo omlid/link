@@ -43,8 +43,13 @@ class Link
 			}
 
 			$url = preg_replace('/\[.*\]/', '', $url);
-			if($full && !preg_match('/^http/', $url))
+			if($full && !preg_match('/^(http|https)/', $url))
 			{
+				if(substr($url, 0, 1) !== '/' && substr(url('/'), -1) !== '/')
+				{
+					$url = '/' . $url;
+				}
+
 				$url = url('/') . $url;
 			}
 
